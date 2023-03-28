@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Css Challenge </title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+body{ background-color:hsl(210, 46%, 95%)  ;}
+.body
+{
+ display: flex;
+ min-height: 200vh;
+
+}
+
+.box{
+  padding: 29px;
+  display: grid;
+  background-color: rgb(254, 253, 255);
+  max-width: 100%;
+ /*max-height: 80%;*/
+ border-radius: 10px;
+}
+
+
+.container{
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fill, minmax(250px,5fr));
+  grid-template-rows: repeat(auto);
+  grid-gap:30px ;
+  grid-auto-flow: dense;
+  margin: 50px;
+}
+
+.container.box{display: grid;place-items: center;text-align: left;}
+
+    .box:nth-child(1){grid-column: span 2; background-color: hsl(263, 55%, 52%);}
+    .box:nth-child(2){background-color:hsl(217, 19%, 35%);}
+    .box:nth-child(5){grid-column: span 2;background-color: hsl(219, 29%, 14%); }
+    .box:nth-child(3){grid-row: span 2;}
+
+.photo{height: 40px; width: 40px; border-radius: 50px ; color: aliceblue;}
+
+.photo2{height: 110px;width: 110px;padding-left: 340px;margin-top: -28px;}
+
+.photo1{height: 40px; width: 40px;border-radius: 50px ; border-color: rgb(251, 255, 0);/*padding-top: -80px; margin-top: -50px; top:20px*/}
+
+.word1{font-size: 21px;font-style:bold;color: rgb(248, 245, 245);}
+.word11{font-size: 19px;font-style:bold;color: rgb(49, 48, 48);}
+
+.word2{margin-top: 10px;font-size: 15px;color: rgb(168, 165, 165);}
+
+.name {font-style: bold ;font-size: 15px;color: white;}
+.name1 {font-style: bold ;font-size: 15px;color: rgb(61, 61, 61);}
+.ss{font-size: 13px;color: rgb(184, 179, 179); margin-top: -15px;}
+
+
+/*.d{ 
+  margin-top:-35px;
+}*/
+.line{  margin-top: -50px; margin-left: 50px;           }
+.kk{  margin-top: -80px; }
+
+@media (max-width: 1440px) {
+
+.container{
+  
+  grid-template-columns: repeat(auto-fill, minmax(250px,5fr));
+  grid-template-rows: repeat(auto);}
+ 
+}
+
+
+    /*.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }*/
+
+  </style>
+</head>
+
+
+
+
+<body>
+  
+<div class="container">
+
+ 
+  <div class="box">
+    
+<div class="content">
+  <div class="d">
+   
+ 
+ <img  class ="photo2" src="bg-pattern-quotation.svg">
+ <div class="kk">
+ <img class ="photo1" src="image-daniel.jpg">
+ <div class="line">
+  <p class="name"> Daniel Clifford</p>
+  <p class="ss"> Verified Graduate</p>
+ </div>
+
+<div class="word1 ">
+  I received a job offer mid-course, and the subjects I learned were current, if not more so, 
+  in the company I joined. I honestly feel I got every penny’s worth.
+</div>
+<div class="word2">
+  “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
+  transition and have heard some people who had an amazing experience here. I signed up 
+  for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
+  The next 12 weeks was the best - and most grueling - time of my life. Since completing 
+  the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+</div>
+</div>
+</div>
+</div>
+  </div>
+
+
+
+
+  <div class="box">
+    <div class="content">
+      <img class ="photo" src="image-jonathan.jpg">
+      <div class="line">
+ <p class="name" >Jonathan Walters</p>
+  <p class="ss">Verified Graduate</p></div>
+<div class="word1">
+  The team was very supportive and kept me motivated
+</div>
+
+<div class="word2">
+  “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
+  for a big company. This was one of the best investments I’ve made in myself. ”
+</div>
+</div>
+</div>
+
+
+
+<div class="box">
+  <div class="content">
+    <img class ="photo" src="image-kira.jpg">
+    <div class="line">
+<p class="name1" > Kira Whittle</p>
+<p class="ss">Verified Graduate</p></div>
+<div class="word11">
+  Such a life-changing experience. Highly recommended!
+</div>
+
+<div class="word2">
+
+  “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
+  professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
+  student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
+  did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
+  project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
+  could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
+  experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
+  100% recommend! ”
+</div>
+</div>
+</div>
+
+
+
+ <div class="box">
+    <div class="content">
+      <img class ="photo" src="image-jeanette.jpg">
+      <div class="line">
+ <p class="name1" > Jeanette Harmon</p>
+  <p class="ss">Verified Graduate</p></div>
+<div class="word11">
+  An overall wonderful and rewarding experience
+</div>
+
+<div class="word2">
+  “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
+  while doing something I love. ”
+</div>
+</div>
+</div>
+
+
+
+
+<div class="box">
+  <div class="content">
+    <img class ="photo" src="image-patrick.jpg">
+    <div class="line">
+<p class="name" >  Patrick Abrams</p>
+<p class="ss">Verified Graduate</p></div>
+<div class="word1">
+  Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
+  learning from their experiences was easy.
+</div>
+
+<div class="word2">
+
+  “ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
+  gave me the confidence necessary to be able to go out in the world and present myself as a capable 
+  junior developer. The standard is above the rest. You will get the personal attention you need from 
+  an incredible community of smart and amazing people. ”
+</div>
+</div>
+</div>
+
+
+</div>
+  
+
+  
+
+
+
+</body>
+</html>
